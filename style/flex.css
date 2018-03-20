@@ -1,0 +1,28 @@
+.flex-box{
+	width: 700px;
+	height: 400px;
+	margin: 100px auto;
+	background-color: red;
+	display: flex;
+	justify-content:center; /*flex-start flex-center flex-end */
+	flex-direction: row;/*row row-reverse column column-revers*/
+	align-items: center;/*flex-start flex-center flex-end*/
+	flex-wrap: wrap;
+	align-content: flex-start; ;
+
+}
+.flex-box .flex-item{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background-color: blue;
+	border:1px black solid;
+	margin-right: 20px;
+	
+}
+.flex-box .flex-item:last-child{
+	margin-right: 0;
+	align-self: flex-start;
+
+}
