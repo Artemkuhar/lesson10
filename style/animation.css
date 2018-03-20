@@ -1,0 +1,49 @@
+@keyframes anim{
+	from{
+		left: 0;
+		top: 0;
+	}
+
+	to{
+		left: 400px;
+		top: 400px;
+	}
+}
+.animationWrap{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+.animationWrap .block{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: absolute;
+	animation-name:anim2;
+	animation-duration: 5s;
+	animation-delay: 1s;
+	animation-timing-function: linear; /*ease-in ease-out*/
+	animation-iteration-count: 1; /*количество повторений 1 2 3 4*/
+	animation-fill-mode: forwards; /*оставляет анимацию в конечной точке*/
+	/* Для добавление 2-х анимация 1 эдементу*//*animation:anim 2s ease-in ,anim2 1s infinite linear 1s;*//* Для добавление 2-х анимация 1 эдементу*//*name duration  iteration-count timing-function delay*/
+}
+@keyframes anim2{
+	0%{
+		left: 0;
+		top: 0;
+		background-color: orange;
+	}
+	25%{
+		background-color: green;
+		}
+	50%{
+		left: 400px;
+		top: 400px;
+		background-color: white;
+	}
+	100%{
+		left: 0;
+		top: 0;
+		background-color: red;
+	}
+}
